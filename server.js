@@ -72,8 +72,8 @@ const urlSchema = new mongoose.Schema({
       res.status(500).json({ error: 'Internal server error' });
     }
   });
-  
-  const port = 3000;
+
+  const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
