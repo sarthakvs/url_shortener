@@ -7,7 +7,7 @@ The server-side handles URL shortening, retrieval, and redirection. It utilizes 
 
 ![image](https://github.com/sarthakvs/url_shortener/assets/98168713/efcfe589-a362-4d28-9333-ba9ccbd4b0a3)
 
-Github Repo:- https://github.com/sarthakvs/url_shortener
+Github Repo:- [sarthakvs/url_shortener](https://github.com/sarthakvs/url_shortener)
 
 # Pre-requisites
 1. Ensure that you have Node installed in your system.(https://nodejs.org/en).
