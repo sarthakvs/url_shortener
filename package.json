@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "predeploy":"npm run build",
+    "deploy":"gh pages -d public",
   },
   "keywords": [],
   "author": "",
