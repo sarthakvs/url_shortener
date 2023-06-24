@@ -11,7 +11,7 @@ Github Repo:- [sarthakvs/url_shortener](https://github.com/sarthakvs/url_shorten
 
 # Pre-requisites
 1. Ensure that you have Node installed in your system.(https://nodejs.org/en).
-2. Ensute that you have MongoDB installed in your system.(https://www.mongodb.com/try/download/community).
+2. Ensure that you have MongoDB installed in your system.(https://www.mongodb.com/try/download/community).
    
 # How to run
 1. Download and extract the project
