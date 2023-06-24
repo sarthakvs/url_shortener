@@ -5,12 +5,15 @@ The client-side allows users to enter long URLs, sends requests to the server, a
 
 The server-side handles URL shortening, retrieval, and redirection. It utilizes Node.js, Express, and MongoDB. Existing URLs are fetched from the database, and new ones are stored in the database url-shortener.urls
 
+![image](https://github.com/sarthakvs/url_shortener/assets/98168713/efcfe589-a362-4d28-9333-ba9ccbd4b0a3)
+
+
 # Pre-requisites
 1. Ensure that you have Node installed in your system.(https://nodejs.org/en).
 2. Ensute that you have MongoDB installed in your system.(https://www.mongodb.com/try/download/community).
    
 # How to run
 1. Download and extract the project
-2. In the command prompt,Go to the project Directory and run "npm install"
-3. After installing run "npm start" or "nodemon server.js"
+2. In the command prompt,go to the project Directory and run `npm install`
+3. After installing run `npm start` or `nodemon server.js`
 4. Enjoy :) 		
