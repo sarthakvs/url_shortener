@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "nodemon server.js",
-    "predeploy":"npm install && node server.js",
-    "deploy":"gh pages -d public",
+    "predeploy": "npm install && node server.js",
+    "deploy": "gh pages -d public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "mongoose": "^7.3.1",
     "shortid": "^2.2.16"

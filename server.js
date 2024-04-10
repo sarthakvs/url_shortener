@@ -2,11 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const shortid = require('shortid');
 const path = require('path');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb://0.0.0.0/url-shortener', {
+mongoose.connect(`mongodb+srv://sarthakvs:${process.env.password}@urlshortener.cswethd.mongodb.net/?retryWrites=true&w=majority&appName=urlShortener`, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
