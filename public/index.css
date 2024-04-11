@@ -1,24 +1,24 @@
 /* index.css */
 .font{
-  color:#333;;
+  color:#333;
 }
 .body-container {
-  background-color: #5e5656; /* Light mode background color */
+  background-color:#a48f8f; 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s ease; /* Transition for background color change */
+  transition: background-color 0.3s ease;
 }
 
 .container {
   position: relative;
   max-width: 800px;
   margin: 30px auto;
-  background-color: #b1afaf; /* Light mode background color */
+  background-color: #e6e6e6; /* Light mode background color */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  transition: background-color 0.3s ease; /* Transition for background color change */
+  transition: background-color 0.3s ease; 
 }
 
 h1 {
@@ -97,15 +97,14 @@ button[type="submit"]:hover {
   }
 }
 
-/* Dark mode styles */
 .dark-mode .body-container {
-  background-color: #222; /* Dark mode background color */
+  background-color: #4d4343;
 }
 .dark-mode .font {
- color: #fff; /* Dark mode background color */
+ color: #fff; 
 }
 .dark-mode .container {
-  background-color: #333; /* Dark mode background color */
+  background-color: #333; 
 }
 
 .dark-mode h1,
