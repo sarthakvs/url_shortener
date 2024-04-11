@@ -12,8 +12,6 @@ form.addEventListener('submit', async (e) => {
     return;
   }
   try {
-    //Checking if the URL actually pointing to a legitimate website
-    const legitOrNot = await fetch(fullUrl, { method: 'HEAD' });
     //Shortening using api call
     const response = await fetch('/api/shorten', {
       method: 'POST',
@@ -40,7 +38,6 @@ form.addEventListener('submit', async (e) => {
     urlTableBody.appendChild(row);
   } catch (error) {
     console.error('Error:', error.message);
-    if(error.message == "Failed to fetch") alert('URL does not point to an existing website. Check Spelling');
   }
 });
 document.addEventListener("DOMContentLoaded", function() {
