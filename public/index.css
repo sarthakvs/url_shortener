@@ -1,0 +1,139 @@
+/* index.css */
+.font{
+  color:#333;;
+}
+.body-container {
+  background-color: #5e5656; /* Light mode background color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease; /* Transition for background color change */
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #b1afaf; /* Light mode background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: background-color 0.3s ease; /* Transition for background color change */
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #333; /* Light mode text color */
+}
+
+#url-form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#fullUrl {
+  width: 70%;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100px;
+  background-color: #5d7084; /* Light mode button background color */
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* Light mode button text color */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition for button background color change */
+}
+
+button[type="submit"]:hover {
+  background-color: #373f47; 
+}
+
+#shortUrl {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff; /* Light mode text color */
+  font-size: 18px;
+}
+
+#urlTable {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#urlTable th,
+#urlTable td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-bordered {
+  border: none;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: none;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  #fullUrl {
+      width: 100%;
+      margin-right: 0;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode .body-container {
+  background-color: #222; /* Dark mode background color */
+}
+.dark-mode .font {
+ color: #fff; /* Dark mode background color */
+}
+.dark-mode .container {
+  background-color: #333; /* Dark mode background color */
+}
+
+.dark-mode h1,
+.dark-mode #shortUrl {
+  color: #eee; /* Dark mode text color */
+}
+
+.dark-mode #fullUrl {
+  border-color: #777; /* Dark mode input border color */
+}
+
+.dark-mode button[type="submit"] {
+  background-color: #bbb; /* Dark mode button background color */
+  color: #222; /* Dark mode button text color */
+}
+
+.dark-mode button[type="submit"]:hover {
+  background-color: #999; /* Dark mode button hover background color */
+}
+.moon-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.moon-button:hover {
+  transform: scale(1.1); /* Add hover effect */
+}
