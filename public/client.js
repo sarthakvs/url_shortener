@@ -40,6 +40,32 @@ form.addEventListener('submit', async (e) => {
     console.error('Error:', error.message);
   }
 });
+document.addEventListener("DOMContentLoaded", function() {
+  // Dark Mode Toggle Button Click Event
+  document.getElementById("darkModeToggle").addEventListener("click", function() {
+      toggleDarkMode();
+  });
+
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      // Toggle dark mode class on body
+      document.body.classList.toggle("dark-mode");
+
+      // Store the user's preference in local storage
+      if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkModeEnabled", "true");
+      } else {
+          localStorage.removeItem("darkModeEnabled");
+      }
+  }
+
+  // Check if dark mode is enabled from local storage
+  var darkModeEnabled = localStorage.getItem("darkModeEnabled");
+  if (darkModeEnabled === "true") {
+      document.body.classList.add("dark-mode");
+  }
+});
+
 
 //Function to Validate the URL
 function isValidUrl(url) {
